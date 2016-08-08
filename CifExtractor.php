@@ -5,7 +5,7 @@ namespace Cif;
 class CifExtractor
 {
 
-    private static $cookie = "ASP.NET_SessionId=j2sdh0554udokff4qqxndp34; TS011d2310=015dd60f3ed592200c66452a304606b53fcddfb71a6a8928d9499022bcba5ba42d9a0532abcf386f596b18c5f38d201ba15851843b; TS01ac0ef4=015dd60f3e1226cb9a3421d24e5a737d821a37c72908c295cea40b0df19c0f1c2aea41aa61405c1fda5b9e7b987886cf8e47f4575af81fa2f5bf7cf68b421e5909d7eeac97";
+    private static $cookie = "ASP.NET_SessionId=j2sdh0554udokff4qqxndp34; TS011d2310=015dd60f3ed592200c66452a304606b53fcddfb71a6a8928d9499022bcba5ba42d9a0532abcf386f596b18c5f38d201ba15851843b; TS01ac0ef4=015dd60f3eeb1534951fd0644244fe0246cdcc4ea0b3361402e0ac0ddf55a573f8b1693bb5ebf21076f5da6260daa96907f3d548ff1192340108e45723dd27e716676ce311";
     private static $lang = "FR";
 
     private static $letters = ['b', 's', 'd', 'e'];
@@ -136,7 +136,7 @@ class CifExtractor
         $title =  trim($dom->getElementById('Title')->nodeValue);
         $description =  trim($dom->getElementById('Description')->nodeValue);
 
-        $error = !(substr($title, 0, strlen($letter . $code)) === ($letter . $code)) && ($description == "");
+        $error = (strpos($title, "Error") !== false);
 
         if ($error) {
             echo "\033[31mnothing\033[0m. Skipping.\n";
