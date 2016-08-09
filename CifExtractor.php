@@ -5,8 +5,8 @@ namespace Cif;
 class CifExtractor
 {
 
-    private static $cookie = "ASP.NET_SessionId=j2sdh0554udokff4qqxndp34; TS011d2310=015dd60f3ed592200c66452a304606b53fcddfb71a6a8928d9499022bcba5ba42d9a0532abcf386f596b18c5f38d201ba15851843b; TS01ac0ef4=015dd60f3eeb1534951fd0644244fe0246cdcc4ea0b3361402e0ac0ddf55a573f8b1693bb5ebf21076f5da6260daa96907f3d548ff1192340108e45723dd27e716676ce311";
-    private static $lang = "FR";
+    private static $cookie = "ASP.NET_SessionId=j2sdh0554udokff4qqxndp34; TS011d2310=015dd60f3ed592200c66452a304606b53fcddfb71a6a8928d9499022bcba5ba42d9a0532abcf386f596b18c5f38d201ba15851843b; TS01ac0ef4=015dd60f3e5f26cb72736adb5494e5486569123979a05ba89a19e9fc49d11766b0272dc58cd8f20501db8ed28a3a6f050b74f56f87a5d79fe59da53e698b4ed5e935f33511";
+    private static $lang = "NA";
 
     private static $letters = ['b', 's', 'd', 'e'];
 
